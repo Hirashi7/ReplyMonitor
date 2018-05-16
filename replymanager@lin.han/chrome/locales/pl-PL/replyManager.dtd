@@ -1,0 +1,56 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this file,
+     You can obtain one at http://mozilla.org/MPL/2.0/.-->
+
+<!-- replyManagerMailWindowOverlay -->
+<!ENTITY replyManagerComposeReminderItem.label "Ustaw przypomnienia">
+<!ENTITY replyManagerMailContextMenu.label "Monitor odpowiedzi">
+<!ENTITY replyManagerExpectReplyCheckbox.label "Spodziewana odpowiedź">
+<!ENTITY replyManagerModifyExpectReplyItem.label "Zmień termin odpowiedzi">
+<!ENTITY replyManagerSendReminderItem.label "Ustaw przypomnienie">
+<!ENTITY viewAllMarkedMessages.label "Zobacz wszystkie zaznaczone wiadomości">
+<!ENTITY viewAllMarkedMessagesButton.label "Lista wiadomości oczekujących na odpowiedź">
+<!ENTITY viewAllMarkedMessagesButton.tooltip "Kliknij, aby zobaczyć listę wszystkich wiadomości oczekujących na odpowiedzi.">
+<!ENTITY markExpectReplyButton.label "Zaznacz jako oczekujące na odpowiedź">
+<!ENTITY modifyDeadlineButton.label "Zmień termnin odpowiedzi">
+<!ENTITY modifyDeadlineButton.tooltip "Klinij, aby zmienić terminy odpowiedzi.">
+
+<!-- replyManagerMsgHdrViewOverlay -->
+<!ENTITY allRepliedShowRepliesButton.label "Show replies">
+<!ENTITY allRepliedLabel.value "This message has been replied to.">
+<!ENTITY notAllRepliedLabel.value "Oczekuj odpowiedzi do: ">
+<!ENTITY pastDeadlineLabel.value "The deadline for replies has passed.">
+<!ENTITY notAllRepliedShowRepliesLabel.value "responded,">
+<!ENTITY notAllRepliedShowNotRepliedLabel.value "are expected to reply.">
+<!ENTITY pastDeadlineShowNotRepliedLabel.value "did not reply in time.">
+<!ENTITY remindThemButton.label "Remind them">
+<!ENTITY showRepliesButton.tooltip "Click to read the replies">
+<!ENTITY showNotRepliedButton.tooltip "Click to see who have not replied">
+<!ENTITY sendReminderButton.tooltip "Click to send a reminder">
+<!ENTITY replyManagerMinimonthDropdown.tooltip "Click to change the deadline">
+
+<!-- messengercompose -->
+<!ENTITY other-elements-toggle.label "Oczekuj odpowiedzi do: ">
+
+<!-- replyManagerDateDialog -->
+<!ENTITY replyManagerDateDialog.title "Reply Monitor">
+<!ENTITY replyManagerAcceptButton.label "Save">
+<!ENTITY replyManagerCancelButton.label "Cancel">
+<!ENTITY replyManagerDateDialogHeader.title "Pick a deadline:">
+
+<!-- replyManagerShowAddressDialog -->
+<!ENTITY replyManagerShowAddressDialog.title "Reply Monitor">
+<!ENTITY replyManagerShowAddressDialogAcceptButton.label "Send Reminder">
+<!ENTITY replyManagerShowAddressDialogHeader.title "Expecting replies from:">
+
+<!-- replyManagerBoilerplateDialog -->
+<!ENTITY replyManagerBoilerplateDialog.title "Reply Monitor">
+<!ENTITY replyManagerBoilerplateDialogheader.title "Reminder boilerplate:">
+
+<!-- preference overlay -->
+<!ENTITY paneReplyManager.title "Reply Monitor">
+<!ENTITY enableReplyManagerGroupbox.label "Enable Reply Monitor">
+<!ENTITY toggleReplyManagerCreateEvent.label "Create Calendar Event">
+<!ENTITY prefReplyManagerBoilerplate.label "Reminder Boilerplate">
+<!ENTITY toggleReplyManagerIncludeCC.label "Expect CCs to reply">
+<!ENTITY toggleReplyManagerIncludeBCC.label "Expect BCCs to reply">
