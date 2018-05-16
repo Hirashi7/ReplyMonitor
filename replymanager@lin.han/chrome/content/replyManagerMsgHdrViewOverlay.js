@@ -80,10 +80,10 @@ function hdrViewModifyExpectReply() {
 function showNotReplied() {
   let openDialogFunction = function(aGlodaMsg, aCollection, recipients) {
     let addressList = [];
-    for each(let [i, recipient] in Iterator(recipients)) {
+    recipients.forEach(recipient => {
       if (!recipient.didReply)
         addressList.push(recipient.address);
-    }
+    });
     let params = {
       inAddressList: addressList,
       outSendReminder: null,
@@ -255,10 +255,10 @@ var replyManagerHdrViewWidget = {
               onItemsAdded: function() {},
               onItemsRemoved: function() {},
               onItemsModified: function() {},
-              onQueryCompleted: function(aCollection) {                
-                for each (msg in aCollection.items) {
+              onQueryCompleted: function(aCollection) {  
+                (aCollection.items).forEach(msg => {
                   ReplyManagerUtils.updateExpectReplyForHdr(msg.folderMessage);
-                }
+                });              
               },
             });
           }

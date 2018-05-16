@@ -46,10 +46,10 @@ let ReplyManagerUtils = {
         let bccList = {};
         let getList = function(aList) {
           let rvList = {};
-          for each (let address in aList) {
+          aList.forEach(address => {
             let addressValue = address.value;
             rvList[addressValue] = true;
-          }
+          });
           return rvList;
         }
         ccList = getList(aGlodaMsg.cc);
@@ -61,7 +61,7 @@ let ReplyManagerUtils = {
         for (let i = 0; i < aGlodaMsg.recipients.length; ++i) {
           let address = aGlodaMsg.recipients[i].value;
           if (!(ccList[address] && !includeCC) && !(bccList[address] && !includeBCC)) {
-            let didReply = aCollection.items.some(function(aItem) aItem.from.value == address);
+            let didReply = aCollection.items.some(function(aItem) {aItem.from.value == address});
             recipients[counter++] = new recipient(address, didReply);
           }
         }
@@ -179,10 +179,9 @@ let ReplyManagerUtils = {
       if (addressStr != "") {
         let addressListObj = {};
         headerParser.parseHeadersWithArray(addressStr, addressListObj, {}, {});
-        for each (let recipient in addressListObj.value) {
-          //Let's make the address the name of the property
+        (addressListObj.value).forEach(recipient => {
           recipients[recipient] = true;
-        }
+        });
       }
     };
     mergeFunction(aMsgHdr.recipients);
@@ -259,8 +258,15 @@ function indexMessage(aMsgHdr) {
 }
 
 function getNotRepliedRecipients(aRecipientsList) {
-  return recipients = [recipient.address for each ([i, recipient] in Iterator(aRecipientsList))
-    if (!recipient.didReply)].join(",");
+  var recipients = [];
+  aRecipientsList.forEach(recipient => {
+    if (!recipient.didReply){
+      recipient = recipient.join(",");
+    }
+    recipients.push(recipient);
+  });
+  return recipients;
+    
 }
 
 //Remove the '-' in the date string to get a date string used by iCalString
